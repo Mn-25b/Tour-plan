@@ -27,29 +27,25 @@
   .container
     max-width: 576px
     width: 92%
-  .navbar
+  .menu
+    &-button
+      width: 16px
+      height: 11px
+      padding: 0
 
-    &-menu, &__search, &__user
-      display: none
-    .menu
-      &-button
+      display: flex
+      justify-content: space-between
+      align-items: center
+      flex-direction: column
+
+      cursor: pointer
+      outline: none
+      background: none
+      border: none
+      &__line
         width: 16px
-        height: 11px
-        padding: 0
-
-        display: flex
-        justify-content: space-between
-        align-items: center
-        flex-direction: column
-
-        cursor: pointer
-        outline: none
-        background: none
-        border: none
-        &__line
-          width: 16px
-          height: 1px
-          background: $text-color
+        height: 1px
+        background: $text-color
 
   .hotel
     &-wrapper
@@ -69,9 +65,10 @@
         display: none
   .stars
     flex-basis: auto
-@media (max-width: 576px)
-  .logo
-    width: 99px
+@media (max-width: 767px)
+  .navbar
+    &-menu, &__search, &__user
+      display: none
 
 @media (max-width: 320px)
   .container
