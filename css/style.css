@@ -582,6 +582,10 @@ template {
   line-height: 18px;
 }
 
+.reting__counter-small {
+  font-size: 10px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
