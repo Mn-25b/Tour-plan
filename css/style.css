@@ -596,6 +596,15 @@ template {
 .slider {
   position: relative;
   width: 728px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slider__img {
+  max-width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .slider--die::after {
