@@ -554,9 +554,6 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
 }
 
 .stars {
@@ -783,6 +780,26 @@ template {
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
+}
+
+.map {
+  width: 347px;
+  height: 213px;
+  background: #000;
+  border-radius: 10px;
+}
+
+.hotel-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (max-width: 1200px) {
