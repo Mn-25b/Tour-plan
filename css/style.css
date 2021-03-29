@@ -810,11 +810,12 @@ template {
 }
 
 .newsletter {
+  background-attachment: fixed;
   background-image: url(../img/Newsletter-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 78px 0 68px;
+  padding: 78px 0 67px;
   position: relative;
 }
 
@@ -869,7 +870,7 @@ template {
 }
 
 .subscribe__input {
-  padding: 0 75px 0 19px;
+  padding: 0 75px 0 33px;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -885,8 +886,9 @@ template {
 
 .subscribe__button {
   position: absolute;
-  width: 65px;
-  height: 55px;
+  min-width: 65px;
+  max-width: 100px;
+  height: 100%;
   top: 0;
   right: 0;
   border: none;
@@ -935,6 +937,9 @@ template {
   .search__input {
     width: 340px;
   }
+  .hotel {
+    padding-bottom: 56px;
+  }
   .hotel-grid {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -959,6 +964,15 @@ template {
   }
   .slider--bottom {
     margin-bottom: 30px;
+  }
+  .newsletter {
+    padding: 75px 0 70px;
+  }
+  .newsletter-wrapper {
+    max-width: 700px;
+  }
+  .subscribe {
+    margin-top: -5px;
   }
 }
 
@@ -1046,11 +1060,28 @@ template {
   .booking--bottom {
     margin-bottom: 30px;
   }
+  .newsletter-wrapper {
+    width: 92%;
+    max-width: 576px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .newsletter__subscribe {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 460px) {
   .slider {
     height: 250px;
+  }
+  .subscribe {
+    width: 100%;
   }
 }
 
@@ -1067,6 +1098,7 @@ template {
   }
   .hotel {
     padding-top: 5px;
+    padding-bottom: 39px;
   }
   .hotel-info {
     margin-bottom: 20px;
@@ -1081,8 +1113,36 @@ template {
   .slider--bottom {
     margin-bottom: 17px;
   }
+  .booking--bottom {
+    margin-bottom: 20px;
+  }
   .map {
     width: 280px;
     height: 172.94px;
+  }
+  .newsletter {
+    padding: 58px 0 83px;
+  }
+  .newsletter-wrapper {
+    width: 280px;
+  }
+  .newsletter-title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .newsletter-title__strong {
+    margin-top: 5px;
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .newsletter__subscribe {
+    margin-top: 22px;
+  }
+  .subscribe {
+    width: 280px;
+    height: 55px;
+  }
+  .subscribe__input {
+    padding: 0 75px 0 20px;
   }
 }
