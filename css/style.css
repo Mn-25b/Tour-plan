@@ -556,6 +556,69 @@ template {
           justify-content: space-between;
 }
 
+.hotel-slider {
+  position: relative;
+  max-width: 728px;
+  max-height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+  margin: 0;
+}
+
+.hotel-slider__img {
+  width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hotel-slider__item {
+  width: 100%;
+  height: 100%;
+}
+
+.hotel-slider__item::after {
+  content: '';
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
+  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+}
+
+.hotel-slider__button {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: inherit;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+  z-index: 99;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.hotel-slider__button--prev {
+  left: 18px;
+  background-image: url(../img/arrow-left.svg);
+}
+
+.hotel-slider__button--next {
+  right: 18px;
+  background-image: url(../img/arrow-right.svg);
+}
+
 .stars {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -595,67 +658,6 @@ template {
 
 .reting__counter-small {
   font-size: 10px;
-}
-
-.swiper-container {
-  border-radius: 8px;
-  width: 100%;
-  height: 450px;
-}
-
-.slider {
-  position: relative;
-  width: 728px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.slider__img {
-  width: 100%;
-  min-height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.slider__die::after {
-  content: '';
-  position: absolute;
-  z-index: 10;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
-  background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
-}
-
-.slider-button {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  background: inherit;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 10px;
-  z-index: 99;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.slider-button--prev {
-  left: 18px;
-  background-image: url(../img/arrow-left.svg);
-}
-
-.slider-button--next {
-  right: 18px;
-  background-image: url(../img/arrow-right.svg);
 }
 
 .booking {
