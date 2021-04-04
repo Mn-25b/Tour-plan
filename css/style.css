@@ -878,7 +878,7 @@ template {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
-  color: #BDBDBD;
+  color: #757575;
 }
 
 .subscribe__button {
@@ -1268,6 +1268,9 @@ template {
     padding-left: 20px;
     padding-right: 20px;
     line-height: 23px;
+  }
+  .reviews-slider__text {
+    text-align: left;
   }
 }
 
