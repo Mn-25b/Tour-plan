@@ -898,7 +898,7 @@ template {
 }
 
 .reviews {
-  padding: 40px 0 20px 0;
+  padding: 40px 0 70px 0;
 }
 
 .reviews__title {
@@ -1033,6 +1033,98 @@ template {
   right: 18px;
 }
 
+.activities {
+  padding: 60px 0 98px;
+}
+
+.activities__title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-bottom: 57px;
+}
+
+.activities-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.activities__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.activities__text {
+  margin: 0;
+  margin-bottom: 18px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.activities__button {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFFFFF;
+  background: #EC1F46;
+  padding: 7px 22px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+}
+
+.card {
+  position: relative;
+  width: 255px;
+  height: 255px;
+  padding: 24px 29px 24px 26px;
+  border-radius: 6px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+  z-index: -1;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1040,6 +1132,9 @@ template {
   .hotel-slider {
     width: 590px;
     height: 600px;
+  }
+  .card {
+    width: 220px;
   }
 }
 
@@ -1128,6 +1223,20 @@ template {
   }
   .reviews-slider__button--next {
     right: 4px;
+  }
+  .card {
+    width: 339px;
+    height: 255px;
+  }
+  .activities {
+    padding-top: 50px;
+  }
+  .activities__card {
+    margin-bottom: 20px;
+  }
+  .activities-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -1227,6 +1336,10 @@ template {
   .newsletter__subscribe {
     margin-top: 20px;
   }
+  .card {
+    width: 46%;
+    height: 255px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -1253,6 +1366,12 @@ template {
     -webkit-transform: translateX(50%);
             transform: translateX(50%);
     margin-right: -65px;
+  }
+}
+
+@media (max-width: 530px) {
+  .card {
+    width: 100%;
   }
 }
 
@@ -1352,5 +1471,16 @@ template {
     -webkit-transform: translateX(50%);
             transform: translateX(50%);
     margin-right: -90px;
+  }
+  .activities {
+    padding-top: 20px;
+  }
+  .activities__title {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 39px;
+  }
+  .activities__card:nth-last-child(3) {
+    margin-bottom: 28px;
   }
 }
