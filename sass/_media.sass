@@ -6,6 +6,22 @@
     height: 600px
   .card
     width: 220px
+  .packages
+    &-wrapper
+      grid-template-areas: "card-0 card-0" "card-1 card-2" "card-3 card-4"
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: 1fr 1fr 1fr
+      grid-gap: 30px
+  .card-small
+    grid-template: 1fr 1fr / 1fr
+    width: 100%
+    min-height: 500px
+    &__top
+      width: 100%
+  .card-big
+    width: 100%
+    grid-template-rows: 500px
+    grid-template-columns: 1fr 1fr
 
 @media (max-width: 992px)
   .container
@@ -54,6 +70,7 @@
     margin-top: -5px
 
   .reviews
+    padding: 40px 0 90px 0
     &__title
       font-size: 30px
       margin-bottom: 45px
@@ -78,6 +95,14 @@
       margin-bottom: 20px
     &-wrapper
       flex-wrap: wrap
+  .packages
+    padding: 10px 0 60px
+    &__title
+      margin-bottom: 35px
+  .card-big
+    grid-template-rows: 500px
+    grid-template-columns: 330px 1fr
+
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -147,6 +172,24 @@
   .card
     width: 46%
     height: 255px
+  .packages
+    &-wrapper
+      grid-template-areas: "card-0" "card-0" "card-1" "card-2" "card-3" "card-4"
+      grid-template-columns: 1fr
+      grid-template-rows: 0.5fr 0.5fr repeat(4, min-content)
+      grid-gap: 30px
+  .card-small
+    grid-template: 1fr 1fr / 1fr
+    width: 100%
+    height: 580px
+    &__top
+      height: 290px
+  .card-big
+    width: 100%
+    grid-template-rows: 350px 1fr
+    grid-template-columns: 1fr
+    &__botton
+      border-top-right-radius: 0px
 @media (max-width: 640px)
   .reviews
     &__title
@@ -166,6 +209,9 @@
           right: 50%
           transform: translateX(50%)
           margin-right: -65px
+  .packages
+    &-wrapper
+      grid-gap: 15px
 @media (max-width: 530px)
   .card
     width: 100%
@@ -182,6 +228,15 @@
       line-height: 23px
   .reviews-slider__text
     text-align: left
+  .card-big
+    &__botton
+      padding: 30px 21px 25px 32px
+  .packages
+    &-button
+      font-size: 10px
+      width: 90px
+      height: 30px
+      margin-bottom: 15px
 @media (max-width: 320px)
   .logo
     width: 99px
@@ -250,5 +305,3 @@
       margin-bottom: 39px
     &__card:nth-last-child(3)
       margin-bottom: 28px
-      
-
