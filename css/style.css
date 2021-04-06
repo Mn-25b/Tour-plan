@@ -1078,6 +1078,7 @@ template {
 }
 
 .activities__button {
+  font-family: Nunito;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -1233,7 +1234,7 @@ template {
     padding-top: 50px;
   }
   .activities__card {
-    margin-bottom: 20px;
+    margin-bottom: 35px;
   }
   .activities-wrapper {
     -ms-flex-wrap: wrap;
@@ -1371,6 +1372,9 @@ template {
 }
 
 @media (max-width: 530px) {
+  .activities__card {
+    margin-bottom: 20px;
+  }
   .card {
     width: 100%;
   }
