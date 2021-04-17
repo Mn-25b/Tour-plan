@@ -6,7 +6,55 @@
     height: 600px
   .card
     width: 220px
+  .activities
+    padding: 60px 0 49px
+  .footer
+    padding-top: 40px
+    &-wrapper
+      grid-template-columns: 185px 1fr 1fr
+      grid-template-rows: 190px 270px 320px 370px min-content
+    &-logo
+      width: 95px
+      height: 120.29px
 
+      grid-column: 1 / 2
+      grid-row: 1 / 2
+    &-cont
+      &__title
+      &--1
+        grid-column: 1 / 2
+        grid-row: 2 / 3
+      &--2
+        grid-column: 2 / 3
+        grid-row: 2 / 3
+        justify-self: end
+      &--3
+        margin-right: 10px
+        grid-column: 3 / 4
+        grid-row: 2 / 3
+        justify-self: end
+    &-form
+      grid-column: 1 / 4
+      grid-row: 4 / 5
+
+    &-end
+      grid-column: 1 / 4
+      grid-row: 5 / 6
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: 100%
+      &__text
+        justify-self: start
+        grid-column: 1 / 2
+
+    .social-network
+      align-self: center
+      margin-top: 20px
+      grid-column: 2 / 4
+      grid-row: 1 / 2
+    .contact-details
+      margin-top: 10px
+      grid-column: 1 / 4
+      grid-row: 3 / 4
 @media (max-width: 992px)
   .container
     max-width: 698px
@@ -75,7 +123,7 @@
   .activities
     padding-top: 50px
     &__card
-      margin-bottom: 35px
+      margin-bottom: 20px
     &-wrapper
       flex-wrap: wrap
 @media (max-width: 767px)
@@ -166,6 +214,85 @@
           right: 50%
           transform: translateX(50%)
           margin-right: -65px
+
+@media (max-width: 585px)
+  .footer
+    padding-top: 40px
+    &-wrapper
+      grid-template-columns: 185px 1fr
+      grid-template-rows: repeat(8,min-content)
+      grid-row-gap: 20px
+    &-logo
+      width: 95px
+      height: 120.29px
+
+      grid-column: 1 / 2
+      grid-row: 1 / 2
+    &-cont
+      &__title
+      &--1
+        grid-column: 1 / 2
+        grid-row: 3 / 4
+      &--2
+        grid-column: 2 / 3
+        grid-row: 3 / 4
+        justify-self: end
+      &--3
+        margin-right: 10px
+        grid-column: 1 / 2
+        grid-row: 4 / 5
+        justify-self: end
+    &-form
+      grid-column: 1 / 3
+      grid-row: 6 / 7
+
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: 55px min-content min-content min-content 124px min-content
+      &__title
+        grid-column: 1 / 3
+        grid-row: 1 / 2
+      &__input
+        width: 100%
+        &--1
+          grid-column: 1 / 3
+          grid-row: 2 / 3
+        &--2
+          grid-column: 1 / 3
+          grid-row: 3 / 4
+      &__textarea
+        grid-column: 1 / 3
+        grid-row: 4 / 5
+      &__button
+        grid-column: 1 / 2
+        grid-row: 5 / 6
+      &__required
+        align-self: start
+        margin-top: 35px
+        grid-column: 2 / 3
+        grid-row: 5 / 6
+
+    &-end
+      grid-column: 1 / 3
+      grid-row: 7 / 8
+      grid-template-columns: 1fr 100px
+      grid-template-rows: 100%
+      align-self: end
+      &__text
+        justify-self: start
+        grid-column: 1 / 2
+
+    .social-network
+      align-self: center
+      margin-top: 20px
+      grid-column: 2 / 3
+      grid-row: 1 / 2
+      display: flex
+      flex-direction: column
+      justify-self: center
+    .contact-details
+      margin-top: 10px
+      grid-column: 1 / 3
+      grid-row: 5 / 6
 @media (max-width: 530px)
   .activities
     &__card
@@ -185,6 +312,90 @@
       line-height: 23px
   .reviews-slider__text
     text-align: left
+  .footer
+    padding-top: 40px
+    padding-bottom: 0
+    &-wrapper
+      grid-template-columns: 1fr
+      grid-template-rows: repeat(8,min-content)
+      grid-row-gap: 20px
+    &-logo
+      width: 104px
+      height: 120.29px
+
+      grid-column: 1 / 2
+      grid-row: 1 / 2
+    &-cont
+      &__title
+      &--1
+        grid-column: 1 / 2
+        grid-row: 3 / 4
+      &--2
+        grid-column: 1 / 2
+        grid-row: 4 / 5
+        justify-self: start
+      &--3
+        margin-right: 10px
+        grid-column: 1 / 2
+        grid-row: 5 / 6
+        justify-self: start
+    &-form
+      grid-column: 1 / 2
+      grid-row: 7 / 8
+
+      grid-template-columns: 1fr 1fr
+      grid-template-rows: 55px min-content min-content min-content 124px min-content
+      &__title
+        grid-column: 1 / 3
+        grid-row: 1 / 2
+      &__input
+        width: 100%
+        &--1
+          grid-column: 1 / 3
+          grid-row: 2 / 3
+        &--2
+          grid-column: 1 / 3
+          grid-row: 3 / 4
+      &__textarea
+        grid-column: 1 / 3
+        grid-row: 4 / 5
+      &__button
+        grid-column: 1 / 2
+        grid-row: 5 / 6
+      &__required
+        align-self: start
+        margin-top: 35px
+        grid-column: 2 / 3
+        grid-row: 5 / 6
+
+    &-end
+      grid-column: 1 / 3
+      grid-row: 7 / 8
+      grid-template-columns: 1fr
+      grid-template-rows: 10px 20px
+      align-self: end
+      &__text
+        margin-bottom: 10px
+        justify-self: start
+        grid-column: 1 / 2
+      &__image
+        margin-top: 10px
+        justify-self: start
+
+    .social-network
+      align-self: center
+      justify-self: start
+      margin-top: 20px
+      grid-column: 1 / 2
+      grid-row: 2 / 3
+      display: flex
+      flex-direction: column
+      &__wrapper
+        margin-left: 0px
+    .contact-details
+      margin-top: 10px
+      grid-column: 1 / 2
+      grid-row: 6 / 7
 @media (max-width: 320px)
   .logo
     width: 99px
@@ -247,11 +458,100 @@
           margin-right: -90px
   .activities
     padding-top: 20px
+    padding-bottom: 40px
     &__title
       font-size: 18px
       line-height: 23px
       margin-bottom: 39px
     &__card:nth-last-child(3)
       margin-bottom: 28px
-      
+  .footer
+    padding-top: 40px
+    padding-bottom: 0
+    &-wrapper
+      grid-template-columns: 1fr
+      grid-template-rows: repeat(9,min-content)
+      grid-row-gap: 20px
+    &-logo
+      width: 112px
+      height: 110.29px
 
+      grid-column: 1 / 2
+      grid-row: 1 / 2
+    &-cont
+      margin-top: 10px
+      &__title
+      &--1
+        margin-top: 0px
+        grid-column: 1 / 2
+        grid-row: 5 / 6
+      &--2
+        grid-column: 1 / 2
+        grid-row: 4 / 5
+        justify-self: start
+      &--3
+        margin-right: 10px
+        grid-column: 1 / 2
+        grid-row: 3 / 4
+        justify-self: start
+    &-form
+      margin-top: 20px
+      grid-column: 1 / 2
+      grid-row: 7 / 8
+
+      grid-template-columns: 1fr
+      grid-template-rows: 40px min-content min-content 120px min-content min-content min-content
+      &__title
+        grid-column: 1 / 3
+        grid-row: 1 / 2
+      &__input
+        width: 100%
+        &--1
+          grid-column: 1 / 3
+          grid-row: 2 / 3
+        &--2
+          grid-column: 1 / 3
+          grid-row: 3 / 4
+      &__textarea
+        grid-column: 1 / 3
+        grid-row: 4 / 5
+      &__button
+        grid-column: 1 / 2
+        grid-row: 6 / 7
+        margin-top: 0
+      &__required
+        align-self: start
+        justify-self: start
+        margin-top: 18px
+        grid-column: 1 / 2
+        grid-row: 5 / 6
+
+    &-end
+      grid-column: 1 / 3
+      grid-row: 8 / 9
+      grid-template-columns: 1fr
+      grid-template-rows: 10px 20px
+      align-self: end
+      margin-top: 20px
+      &__text
+        margin-bottom: 10px
+        justify-self: start
+        grid-column: 1 / 2
+      &__image
+        margin-top: 10px
+        justify-self: start
+
+    .social-network
+      align-self: center
+      justify-self: start
+      margin-top: 20px
+      grid-column: 1 / 2
+      grid-row: 2 / 3
+      display: flex
+      flex-direction: column
+      &__wrapper
+        margin-left: 0px
+    .contact-details
+      margin-top: 20px
+      grid-column: 1 / 2
+      grid-row: 6 / 7
