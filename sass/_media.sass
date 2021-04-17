@@ -149,7 +149,55 @@
         width: 16px
         height: 1px
         background: $text-color
+  .navbar
+    &-menu__item--mobile--viseble
+      display: block
+    &--mobile--fixed
+      position: fixed
+      top: 0
+      left: 0
+      right: 0
+      z-index: 999
+    &__search, &__user
+      &--mobile
+        &--hidden
+          display: none
+        &--viseble
+          display: flex
 
+    &__user
+      flex-direction: column
+      justify-content: center
+    .user__name
+      &--light
+        margin-left: 0
+        margin-top: 10px
+        color: #fff
+    &-bottom
+      padding-top: 20px
+      display: none
+      &--visible
+        position: fixed
+        top: 77px
+        left: 0
+        right: 0
+        bottom: 0
+        display: block
+
+    &-menu
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      &__item
+        margin-bottom: 20px
+  .search
+    justify-content: center
+    margin-left: -10px
+    &__input
+      width: 250px
+  body
+    padding-top: 77px
   .hotel
     &-wrapper
       justify-content: space-between
@@ -173,9 +221,6 @@
       height: 100%
   .stars
     flex-basis: auto
-  .navbar
-    &-menu, &__search, &__user
-      display: none
 
   .map
     width: 100%
@@ -214,7 +259,6 @@
           right: 50%
           transform: translateX(50%)
           margin-right: -65px
-
 @media (max-width: 585px)
   .footer
     padding-top: 40px

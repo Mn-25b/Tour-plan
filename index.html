@@ -14,21 +14,21 @@
 </head>
 
 <body>
-  <header class="navbar">
+  <header class="navbar navbar--mobile--fixed">
     <div class="container">
       <div class="navbar-top">
         <a href="#" class="logo">
           <img src="img/Best-tour-plan.svg" alt="logo: Best Tour Plan" class="logo__image">
         </a>
 
-        <form action="#" class="search navbar__search">
+        <form action="#" class="search navbar__search navbar__search--mobile--hidden">
           <input type="text" placeholder="Search Location" class="search__input">
           <button class="search__button">
             <img src="img/search.svg" alt="Icon search">
           </button>
         </form>
 
-        <a href="#" class="user navbar__user">
+        <a href="#" class="user navbar__user navbar__user--mobile--hidden">
           <img src="img/user-avatar.jpg" alt="avatar: Nathan" class="user__avatar">
           <span class="user__name">Nathan</span>
         </a>
@@ -45,6 +45,21 @@
     <div class="navbar-bottom">
       <div class="container">
         <ul class="navbar-menu">
+          <li class="navbar-menu__item navbar-menu__item--mobile--viseble">
+            <a href="#" class="user navbar__user navbar__user--mobile--visible">
+              <img src="img/user-avatar.jpg" alt="avatar: Nathan" class="user__avatar">
+              <span class="user__name user__name--light">Nathan</span>
+            </a>
+          </li>
+          <li class="navbar-menu__item navbar-menu__item--mobile--viseble">
+            <form action="#" class="search navbar__search navbar__search--mobile--visible">
+              <input type="text" placeholder="Search Location" class="search__input">
+              <button class="search__button">
+                <img src="img/search.svg" alt="Icon search">
+              </button>
+            </form>
+          </li>
+
           <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">All Deals</a></li>
           <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Hotels</a></li>
           <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Activities</a></li>
@@ -373,11 +388,14 @@
           <h3 class="footer-title contact-details__title">Contact Details</h3>
           <span class="contact-details__subtitle">Feel free to contact us by phone, email or by our contact form</span>
           <div class="contact-details__info">
-            <span class="contact-details__contact"><img src="./img/ic_round-location-on.svg" alt="address" class="contact-details__icon"> 9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States</span>
-            <span class="contact-details__contact"><img src="./img/bx_bxs-phone-call.svg" alt="phone" class="contact-details__icon"> Tel (business hours) : 269 1500<br>
+            <span class="contact-details__contact"><img src="./img/ic_round-location-on.svg" alt="address"
+                class="contact-details__icon"> 9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States</span>
+            <span class="contact-details__contact"><img src="./img/bx_bxs-phone-call.svg" alt="phone"
+                class="contact-details__icon"> Tel (business hours) : 269 1500<br>
               Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)<br>
               Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</span>
-              <span class="contact-details__contact"> <img src="./img/ic_round-email.svg" alt="email" class="contact-details__icon">cherly.lawson@example.com</span>
+            <span class="contact-details__contact"> <img src="./img/ic_round-email.svg" alt="email"
+                class="contact-details__icon">cherly.lawson@example.com</span>
           </div>
         </div>
         <form action="#" class="footer-form">

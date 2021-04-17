@@ -472,6 +472,10 @@ template {
   color: #333333;
 }
 
+.navbar-menu__item--mobile--viseble {
+  display: none;
+}
+
 .breadcrumb-list {
   margin: 0;
   padding: 18px 0;
@@ -1727,6 +1731,80 @@ template {
     height: 1px;
     background: #333333;
   }
+  .navbar-menu__item--mobile--viseble {
+    display: block;
+  }
+  .navbar--mobile--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+  .navbar__search--mobile--hidden, .navbar__user--mobile--hidden {
+    display: none;
+  }
+  .navbar__search--mobile--viseble, .navbar__user--mobile--viseble {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar__user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navbar .user__name--light {
+    margin-left: 0;
+    margin-top: 10px;
+    color: #fff;
+  }
+  .navbar-bottom {
+    padding-top: 20px;
+    display: none;
+  }
+  .navbar-bottom--visible {
+    position: fixed;
+    top: 77px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+  }
+  .navbar-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navbar-menu__item {
+    margin-bottom: 20px;
+  }
+  .search {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: -10px;
+  }
+  .search__input {
+    width: 250px;
+  }
+  body {
+    padding-top: 77px;
+  }
   .hotel-wrapper {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -1764,9 +1842,6 @@ template {
   .stars {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
-  }
-  .navbar-menu, .navbar__search, .navbar__user {
-    display: none;
   }
   .map {
     width: 100%;
