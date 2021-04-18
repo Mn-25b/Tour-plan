@@ -157,7 +157,7 @@
       top: 0
       left: 0
       right: 0
-      z-index: 999
+      z-index: 50
     &__search, &__user
       &--mobile
         &--hidden
@@ -243,6 +243,10 @@
   .card
     width: 46%
     height: 255px
+  .modal
+    &__dialog
+      min-width: 378px
+      padding: 33px 40px
 @media (max-width: 640px)
   .reviews
     &__title
@@ -443,6 +447,9 @@
       margin-top: 10px
       grid-column: 1 / 2
       grid-row: 6 / 7
+  .modal
+    &__dialog
+      min-width: 278px
 @media (max-width: 320px)
   .logo
     width: 99px
