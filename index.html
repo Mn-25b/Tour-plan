@@ -398,11 +398,11 @@
                 class="contact-details__icon"><a class="link-nowrap" href="mailto:cherly.lawson@example.com">cherly.lawson@example.com</a></span>
           </div>
         </div>
-        <form action="#" class="footer-form">
+        <form action="send.php" method="POST" class="footer-form">
           <h3 class="footer-title footer-form__title">Send us a message</h3>
-          <input type="text" class="footer-form__input footer-form__input--1" placeholder="Phone Number*">
-          <input type="text" class="footer-form__input footer-form__input--2" placeholder="Your Full Name*">
-          <textarea class="footer-form__textarea" cols="30" rows="10" placeholder="Message"></textarea>
+          <input type="text" class="footer-form__input footer-form__input--1" name="name" placeholder="Phone Number*">
+          <input type="text" class="footer-form__input footer-form__input--2" name="phone" placeholder="Your Full Name*">
+          <textarea name="message" class="footer-form__textarea" cols="30" rows="10" placeholder="Message"></textarea>
           <button class="footer-form__button">Send</button>
           <span class="footer-form__required">* Required Fields</span>
         </form>
