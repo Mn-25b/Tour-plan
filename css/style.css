@@ -1778,11 +1778,12 @@ template {
   }
   .navbar-bottom--visible {
     position: fixed;
-    top: 77px;
+    top: 65px;
     left: 0;
     right: 0;
     bottom: 0;
     display: block;
+    overflow-y: auto;
   }
   .navbar-menu {
     display: -webkit-box;
@@ -1807,6 +1808,7 @@ template {
         -ms-flex-pack: center;
             justify-content: center;
     margin-left: -10px;
+    margin-bottom: 20px;
   }
   .search__input {
     width: 250px;
