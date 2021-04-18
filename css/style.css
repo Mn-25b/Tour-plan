@@ -1195,6 +1195,7 @@ template {
 }
 
 .footer-title {
+  white-space: nowrap;
   color: #FFFFFF;
   margin: 0;
   padding: 0;
@@ -1208,6 +1209,7 @@ template {
   list-style: none;
   padding: 0;
   margin: 0;
+  font-size: 14px;
 }
 
 .footer-list__item {
@@ -1267,7 +1269,7 @@ template {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
-  color: #BDBDBD;
+  color: #494848;
   padding-left: 20px;
   padding-right: 20px;
   outline: none;
@@ -1305,7 +1307,7 @@ template {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
-  color: #BDBDBD;
+  color: #494848;
 }
 
 .footer-form__button {
@@ -1380,13 +1382,14 @@ template {
 
 .footer-end__link {
   color: #FFFFFF;
-  margin-right: 5px;
+  margin-right: 10px;
   -ms-grid-column-align: end;
       justify-self: end;
   text-decoration: none;
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
+  white-space: nowrap;
 }
 
 .footer-end__image {
@@ -1478,6 +1481,12 @@ template {
   font-size: 14px;
   line-height: 22px;
   color: #BDBDBD;
+}
+
+.contact-details__contact a {
+  color: #BDBDBD;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 .contact-details__contact:nth-child(2) {
@@ -1899,7 +1908,7 @@ template {
   }
 }
 
-@media (max-width: 585px) {
+@media (max-width: 767px) {
   .footer {
     padding-top: 40px;
   }
@@ -1936,8 +1945,8 @@ template {
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     grid-row: 3 / 4;
-    -ms-grid-column-align: end;
-        justify-self: end;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
   .footer-cont--3 {
     margin-right: 10px;
@@ -1947,8 +1956,8 @@ template {
     -ms-grid-row: 4;
     -ms-grid-row-span: 1;
     grid-row: 4 / 5;
-    -ms-grid-column-align: end;
-        justify-self: end;
+    -ms-grid-column-align: start;
+        justify-self: start;
   }
   .footer-form {
     -ms-grid-column: 1;
